@@ -1,0 +1,34 @@
+{% extends "main/layout_3.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>С Наступающим Новым Годом, друзья!!!</p>
+<!--        Циклы       -->
+        {% for value in values %}
+<!--        Условия       -->
+            {% if value == 'stroka' %}
+<!--        Фильтры       -->
+                {% filter upper %}
+                    <p>{{ value }}</p>
+                {% endfilter %}
+            {% endif %}
+        {% endfor %}
+
+        <p>{{ obj }}</p>
+
+        <p>{{ obj.car }}</p>
+
+        {% for el in obj.items %}
+            <p>{{ el }}</p>
+        {% endfor %}
+
+        {% for el in obj %}
+<!--        Фильтры       -->
+            <p>{{ el|upper }}</p>
+        {% endfor %}
+        <a href="{% url 'about_3' %}"><button class="btn btn-warning">На страницу про нас</button></a>
+    </div>
+{% endblock %}

@@ -2,6 +2,18 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 
+def index(request):
+    return render(request, 'main/index.html')
+
+
+def about(request):
+    return render(request, 'main/about.html')
+
+
+def contact(request):
+    return render(request, 'main/contact.html')
+
+
 def index_3(request):
     data = {
         'title': 'Главная страница',

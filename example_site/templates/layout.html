@@ -18,10 +18,12 @@
         <h3>Навигация</h3>
         <ul>
             <!--    https://fontawesome.ru/all-icons/-->
-            <a href="{% url 'index_2' %}"><li><i class="fa fa-home" aria-hidden="true"></i> Главная</li></a>
-            <a href="{% url 'about_2' %}"><li><i class="fa fa-address-book" aria-hidden="true"></i> Про нас</li></a>
+            <a href="{% url 'home' %}"><li><i class="fa fa-home" aria-hidden="true"></i> Главная</li></a>
+            <a href="{% url 'about' %}"><li><i class="fa fa-address-book" aria-hidden="true"></i> Про нас</li></a>
             <a href="{% url 'news_home' %}"><i class="fa fa-television" aria-hidden="true"></i> Новости</li></a>
-            <a href="{% url 'contact_2' %}"><li><i class="fa fa-plane" aria-hidden="true"></i> Контакты</li></a>
+            <a href="{% url 'contact' %}"><li><i class="fa fa-plane" aria-hidden="true"></i> Контакты</li></a>
+            <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i>
+                Добавить новость</button></li></a>
         </ul>
     </aside>
     <main>

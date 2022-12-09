@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
+    'news.apps.NewsConfig',
 ]
 
 # MIDDLEWARE - промежуточное ПО проекта, классы или плагины или библиотеки, которые есть внутри проекта

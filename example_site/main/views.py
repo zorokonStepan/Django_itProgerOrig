@@ -32,7 +32,7 @@ def about_2(request):
 
 
 def contact_2(request):
-    return render(request, 'main/index_2.html')
+    return render(request, 'main/contact_2.html')
 
 
 # HttpResponse подходит для вывода не большого количества информации

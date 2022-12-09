@@ -16,6 +16,9 @@
             Commodo quis imperdiet massa tincidunt nunc pulvinar sapien.
         </p>
         {% include 'main/include_file.html' %}
-        <a href="{% url 'about_2' %}"><button class="btn btn-warning">На страницу про нас</button></a>
+        <div class="buttons">
+            <a href="{% url 'about_2' %}"><button class="btn btn-warning">На страницу: про нас</button></a>
+            <a href="{% url 'contact_2' %}"><button class="btn btn-warning">На страницу: контакты</button></a>
+        </div>
     </div>
 {% endblock %}

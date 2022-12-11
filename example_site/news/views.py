@@ -1,7 +1,16 @@
 from django.shortcuts import render, redirect
+# DetailView - позволяет создать контроллер для обработки динамических страниц, вывод определенной записи
+# ListView - вывод всех записей
+from django.views.generic import DetailView
 
 from .models import Article
 from .forms import ArticleForm
+
+
+class NewsDetailView(DetailView):
+    model = Article
+    template_name = 'news/detail_view.html'
+    context_object_name = 'article'  # название ключа с помощью которого будет передаваться определенная запись внутрь шаблона
 
 
 def news_home(request):
